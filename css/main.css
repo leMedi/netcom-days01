@@ -5,3 +5,24 @@
 .navbar-brand img {
     width: 200px;
 }
+
+#hero {
+    background: #086e9a;
+    color: #fff;
+    padding-top: 200px;
+}
+
+#counter .block{
+    display: inline-block;
+}
+
+#counter .block h1{
+    margin: 0;
+    display: inline-block;
+}
+
+.resrv-btn.btn-outline-primary
+{
+    color: #fff;
+    border-color: #fff;
+}
