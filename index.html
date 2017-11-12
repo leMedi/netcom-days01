@@ -9,35 +9,24 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav id="main-nav" class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-inverse fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="imgs/logo.svg" alt="" class="d-inline-block align-top">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         
-        <a class="navbar-brand" href="#">
-            <img src="imgs/logo.svg" alt="">
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Conférenciers <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ateliers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lieux</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Programme</a>
-                </li>
-
-                <li class="nav-item ml-3">
-                    <a class="nav-link btn btn-secondary" href="#">Réservez Votre Billet</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto mt-2 mt-md-0">
+                <a class="nav-item nav-link active" href="#">Conférenciers <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#Ateliers">Ateliers</a>
+                <a class="nav-item nav-link" href="#Lieux">Lieux</a>
+                <a class="nav-item nav-link" href="#Programme">Programme</a>
+                <a class="nav-item nav-link btn btn-secondary ml-3" href="">Réservez Votre Billet</a>
+            </div>
         </div>
     </nav>
 
