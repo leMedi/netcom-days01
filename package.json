@@ -1,0 +1,16 @@
+{
+  "name": "netcom-days",
+  "version": "1.0.0",
+  "description": "le siteweb de l'evenement 'NetCom Days v1 ENSA Khouribga'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "siteweb",
+    "static",
+    "bootstrap"
+  ],
+  "author": "Mehdi Elhaij",
+  "license": "ISC"
+}
