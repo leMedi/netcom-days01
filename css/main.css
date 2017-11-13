@@ -1,3 +1,7 @@
+/**********************
+/= Header
+/*********/
+
 #main-nav {
     padding: 20px 40px 0;
 }
@@ -10,10 +14,15 @@
     color: #fff;
 }
 
+/**********************
+/= Hero
+/*********/
+
 #hero {
     background: #086e9a;
     color: #fff;
     padding-top: 200px;
+    margin-bottom: 0;
     border-radius: 0;
 }
 
@@ -26,8 +35,122 @@
     display: inline-block;
 }
 
-.resrv-btn.btn-outline-primary
-{
+.resrv-btn.btn-outline-primary {
     color: #fff;
     border-color: #fff;
+}
+
+
+/**********************
+/= Main
+/*********/
+
+/* Helpers */
+.paralex-bg {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Section 1 */
+.paralex-bg-1 {
+    background-image: url('../imgs/bg-1.jpeg');
+    background-position: right;
+    background-size: 50%;
+}
+
+/* Section 2 */
+.speaker.card {
+
+}
+
+
+/* Section 3 */
+.bg-gray { background-color: #FCFCFC; }
+
+#programme-list { list-style: none; }
+
+#programme-list li {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#programme-list li .time {
+    width: 200px;
+    float: left;
+}
+
+#programme-list li .session{
+    /*max-width: 500px;*/
+    width: calc(100% - 200px);
+    float: left;
+}
+
+#programme-list li .session h6{
+}
+
+
+/* Section 4 */
+.paralex-bg-2 {
+    background-image: url('../imgs/bg-2.svg');
+    background-position: right;
+    background-size: 50%;
+}
+
+
+/**********************
+/= Footer
+/*********/
+footer {
+    color: #fff;
+    margin-top: 100px;
+    padding: 50px 0 10px;
+    background-color: #1D96AD;
+}
+
+#sponsors { list-style: none; display: inline-block; margin: 20px 0; }
+
+#sponsors li {
+    display: inline-block;
+    width: 80px;
+    margin: 0 20px;
+}
+
+#sponsors li img {
+    width: 100%;
+}
+
+
+.footer-two-sides {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.footer-two-sides div {
+    width: 50%;
+    height: 50px;
+}
+
+.footer-two-sides div:first-child {
+    float: left;
+    padding-right: 50px;
+    border-right: 1px solid #fff;
+}
+
+.footer-two-sides div:last-child {
+    float: right;
+    padding-left: 50px;
+    border-left: 1px solid #fff;
+}
+
+.footer-logo {
+    width: 100px;
+    float: right;
+}
+
+.copyrights {
+    margin-top: 15px;
 }
