@@ -1,3 +1,26 @@
+html, body {
+    font-family: 'texta-regular';
+    font-size: 25px;
+    color: #1A1A1A;
+}
+
+.texta-light { font-family: 'texta-light'; }
+
+h1, .h1,
+h2, .h2
+{
+    font-family: 'texta-black';
+}
+
+b
+{
+    font-family: 'texta-medium';
+}
+
+.btn {
+    font-family: 'texta-light';
+    border-radius: 100px;
+}
 /**********************
 /= Header
 /*********/

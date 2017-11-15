@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "texta-regular";
+    src: url(Texta_Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "texta-light";
+    src: url(Texta_Light.woff) format("woff");
+}
+
+@font-face {
+    font-family: "texta-medium";
+    src: url(Texta_Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: "texta-black";
+    src: url(Texta_Black.woff) format("woff");
+}
