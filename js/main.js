@@ -24,6 +24,12 @@ function counter() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
+    // when the countdown is one don't show negative numbers
+    days = Math.abs(days);
+    hours = Math.abs(hours);
+    minutes = Math.abs(minutes);
+    seconds = Math.abs(seconds);
+    
     // Display the result
     $days.html(formatDigit(days));
     $hours.html(formatDigit(hours));
