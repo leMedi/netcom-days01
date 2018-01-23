@@ -8,11 +8,11 @@
     
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1">
 </head>
 <body>
 
-    <nav id="main-nav" class="navbar navbar-expand-lg navbar-inverse fixed-top">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-inverse position-absolute">
         <a class="navbar-brand" href="#">
             <img src="imgs/logo.svg" alt="" class="d-inline-block align-top">
         </a>
@@ -23,11 +23,11 @@
         
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto mt-2 mt-md-0">
-                <a class="nav-item nav-link active" href="#">Conférenciers <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#Ateliers">Ateliers</a>
-                <a class="nav-item nav-link" href="#Lieux">Lieux</a>
-                <a class="nav-item nav-link" href="#Programme">Programme</a>
-                <a class="nav-item nav-link btn btn-secondary ml-3" href="">Réservez Votre Billet</a>
+                <a class="nav-item nav-link active" href="#conferenciers">Conférenciers <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#ateliers">Ateliers</a>
+                <a class="nav-item nav-link" href="#lieux">Lieux</a>
+                <a class="nav-item nav-link" href="#programme">Programme</a>
+                <a class="nav-item nav-link btn btn1 btn-secondary ml-3" href="https://netcomdays.eventbrite.fr">Réservez Votre Billet</a>
             </div>
         </div>
     </nav>
@@ -36,27 +36,27 @@
     <div id="hero" class="jumbotron">
         <div class="container text-center">
             <p class="lead"><b>Nous vous invitons à</b></p>
-            <h1 class="display-3">NETCOM DAYS 1.0</h1>
-            <p class="lead">29 Novembre, Khouribga, École Nationale des Sciences Appliquées</p>
+            <h1 class="display-3 my-0">NETCOM DAYS 1.0</h1>
+            <p class="lead texta-light my-0">29 Novembre, Khouribga, École Nationale des Sciences Appliquées</p>
                 
-            <div id="counter" class="my-5">
+            <div id="counter" class="mt-3 mb-5">
                 <span id="days" class="block mx-3">
-                    <h1>00</h1>
+                    <h1>28</h1>
                     <hr>
                     <p>JOURS</p>
                 </span>
                 <span id="hours" class="block mx-3">
-                    <h1>00</h1>
+                    <h1>10</h1>
                     <hr>
                     <p>HEURES</p>
                 </span>
                 <span id="minutes" class="block mx-3">
-                    <h1>00</h1>
+                    <h1>38</h1>
                     <hr>
                     <p>MINUTES</p>
                 </span>
                 <span id="seconds" class="block mx-3">
-                    <h1>00</h1>
+                    <h1>45</h1>
                     <hr>
                     <p>SECONDES</p>
                 </span>
@@ -68,62 +68,66 @@
         </div>
     </div>
 
-    <section class="container-fluid">
+    <section id="section-intro" class="container-fluid">
         <div class="row">   
-            <div class="col-2"></div>
-            <div class="col-5" style="padding: 130px 0;">
-                <p class="lead">ENSA KHOURIBGA</p>
-                <h2 class="h1">NETCOM DAYS 1.0</h2>
-                <p>
-                    L'École Nationale des Sciences appliquées de Khouribga, en collaboration avec le club des Réseaux et Télécoms « CRT ENSA Khouribga », organise le mercredi 29 Novembre 2017, la 1re édition des Journées Télécoms NETCOM DAYS sous le thème «<b>Jeunes lauréats et Défis d'Intégration dans le Marché du travail </b>».
+            <div class="col-sm-1 col-xl-2"></div>
+            <div class="col-sm-10 col-xl-5" style="padding: 130px 0;">
+                <div class="header">
+                    <p class="lead">ENSA KHOURIBGA</p>
+                    <h2 class="h1">NETCOM DAYS 1.0</h2>
+                </div>
+                <p class="texta-light">
+                    L'École Nationale des Sciences appliquées de Khouribga, en collaboration avec le club des Réseaux et Télécoms « <b>CRT ENSA Khouribga</b> », organise le mercredi 29 Novembre 2017, la 1re édition des Journées Télécoms NETCOM DAYS sous le thème « <b>Jeunes lauréats et Défis d'Intégration dans le Marché du travail</b> ».
                 </p>
-                <p>
+                <p class="texta-light">
                     Cet événement a pour objectif principal rassembler des différents acteurs agissant dans le domaine du R&T, dont les chefs d’entreprises, les organismes de certification, les ingénieurs, les professeurs et les étudiants... afin de discuter, explorer et partager de nouvelles idées et solutions qui facilitent l’intégration des jeunes lauréats dans le marché du travail
                 </p>
             </div>
-            <div class="col-5 pr-0">
-                <div class="paralex-bg paralex-bg-1" data-type="background" data-speed="5"></div>
+            <div class="col-sm-1 col-xl-5 pr-0 ">
+                <div class="paralex-bg paralex-bg-1 d-sm-none d-xl-block" data-type="background" data-speed="5"></div>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid">
-        <h2 class="text-center mt-5 pt-5">CONFÉRENCIERS</h2>
-        <p class="text-center mb-5">DE CETTE ÉDITION</p>
+    <section id="conferenciers" class="container-fluid">
+        <div class="header">
+            <h2 class="text-center mt-5 pt-5">CONFÉRENCIERS</h2>
+            <p class="text-center mb-5">DE CETTE ÉDITION</p>
+        </div>
         <div class="row">
-            <div class="col-2"></div>
+            <div class="col-1"></div>
             <div class="col">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-6 col-xl-3">
                         <div class="speaker card">
-                            <img class="card-img-top" src="http://via.placeholder.com/360x360" alt="">
+                            <img class="card-img-top rounded-circle" src="imgs/speakers/speaker1.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="text-center">ABDESSADEQ <b>EL ADNANI</b></h5>
                                 <p class="card-text text-center">Directeur Général de L’INANDA CONSEILS</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-6 col-xl-3">
                         <div class="speaker card">
-                            <img class="card-img-top" src="http://via.placeholder.com/360x360" alt="">
+                            <img class="card-img-top rounded-circle" src="imgs/speakers/speaker2.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="text-center">AHMED <b>KHAOUJA</b></h5>
                                 <p class="card-text text-center">Directeur de la concurrence et des opérateurs à L’ANRT, Expert de l’UIT et Directeur de la Magazine LTE.MA</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-6 col-xl-3">
                         <div class="speaker card">
-                            <img class="card-img-top" src="http://via.placeholder.com/360x360" alt="">
+                            <img class="card-img-top rounded-circle" src="imgs/speakers/speaker3.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="text-center">NOUREDINE <b>IDBOUFKER</b></h5>
                                 <p class="card-text text-center">Professeur l'École Nationale des Sciences Appliquées de Marrakech</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-6 col-xl-3">
                         <div class="speaker card">
-                            <img class="card-img-top" src="http://via.placeholder.com/360x360" alt="">
+                            <img class="card-img-top rounded-circle" src="imgs/speakers/speaker4.jpg" alt="">
                             <div class="card-body">
                                 <h5 class="text-center">OMAR <b>RHOULAMI</b></h5>
                                 <p class="card-text text-center">Directeur de la Responsabilité Sociétale de l’Entreprise pour Cisco Systems au Maroc</p>
@@ -132,16 +136,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-1">
             </div>
         </div>
     </section>
 
-    <section class="container-fluid bg-gray">
-        <h2 class="text-center mt-5 pt-5">PROGRAMME</h2>
-        <p class="text-center mb-5">La journée NETCOM DAYS 1.0 va mettre en valeur le domaine des R&T, en adoptant un programme très riche et diversifié :</p>
+    <section id="programme" class="container-fluid bg-gray">
+        <div class="header">
+            <h2 class="text-center mt-5 pt-5">PROGRAMME</h2>
+            <p class="text-center mb-5">La journée NETCOM DAYS 1.0 va mettre en valeur le domaine des R&T, en adoptant un programme très riche et diversifié :</p>
+        </div>
         <div class="row justify-content-md-center">   
-            <div class="col-5 px-5">
+            <div class="col-8 px-5">
                 <ul id="programme-list">
                     <li>
                         <div class="time">9:00</div>
@@ -192,7 +198,7 @@
                     <li>
                         <div class="time">11:30 - 12:15</div>
                         <div class="session">
-                            <h6>Atelier animé par Mr. RAHALLI sous le thème « Bases de la Mobilité »Reconnues dans l'Industrie</h6>
+                            <h6>Atelier animé par Mr. RAHALLI sous le thème « Bases de la Mobilité » Reconnues dans l'Industrie</h6>
                             <p class="lead">JAMAL EDDINE BENRAHAL</p>
                         </div>
                     </li>
@@ -223,12 +229,15 @@
         </div>
     </section>    
 
-    <section class="container-fluid">
+    <section id="ateliers" class="container-fluid">
         <div class="row">   
-            <div class="col-2"></div>
-            <div class="col-5" style="padding: 130px 0;">
-                <p class="lead">ENSA KHOURIBGA</p>
-                <h2 class="h1">NETCOM DAYS 1.0</h2>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 col-lg-5" style="padding: 130px 0;">
+                <div class="header">
+                    <h2 class="h1">WORKSHOP</h2>
+                    <p class="lead">SOUS LE THÈME</p>
+                    <p>BASES DE LA MOBILITÉ</p>
+                </div>
                 <p>
                     Un atelier de formation gratuite, animé par Mr BENRAHAL, l’un des grands formateurs certifiés du CISCO, fera partie de notre événement et sera une valeur ajoutée pour les participants qui vont bénéficier d’une formation concentrée sur les bases de la mobilité. L’objectif principal de ce workshop est apprendre les principes fondamentaux et les concepts du réseautage mobile et sans fil comme fondement des carrières de réseautage.
                 </p>
@@ -236,12 +245,12 @@
                     Cet atelier sera achevé par la distribution des attestations qui témoignent la présence et la participation de nos invités dans le workshop.
                 </p>
                 <p>
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Plus d’information</a>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Inscrire maintenant !</a>
+                    <a class="btn3 btn btn-outline-primary btn-lg" href="#" role="button">Plus d’information</a>
+                    <a class="btn3 btn btn-primary btn-lg" href="#" role="button">Inscrire maintenant !</a>
                 </p>
             </div>
-            <div class="col-5 pr-0">
-                <div class="paralex-bg paralex-bg-2" data-type="background" data-speed="5"></div>
+            <div class="col-sm-2 col-lg-5 pr-0">
+                <div class="paralex-bg paralex-bg-2 d-sm-none d-lg-block" data-type="background" data-speed="5"></div>
             </div>
         </div>
     </section>
@@ -253,39 +262,41 @@
         <div class="sep"></div>
         <div class="row justify-content-md-center">
             <div class="col-auto">
-                <ul id="sponsors">
-                    <li>
-                        <img src="imgs/sponsors/s1.png" alt="">
-                    </li>
+                <div class="table">
+                    <ul id="sponsors">
+                        <li>
+                            <img src="imgs/sponsors/s1.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s2.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s2.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s3.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s3.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s4.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s4.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s5.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s5.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s6.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s6.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s7.png" alt="">
-                    </li>
+                        <li>
+                            <img src="imgs/sponsors/s7.png" alt="">
+                        </li>
 
-                    <li>
-                        <img src="imgs/sponsors/s8.png" alt="">
-                    </li>
-                </ul>
+                        <li>
+                            <img src="imgs/sponsors/s8.png" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div> <!-- .row -->
         
@@ -308,5 +319,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+     <!-- 9:00 29/11/2017 -->
 </body>
 </html>
